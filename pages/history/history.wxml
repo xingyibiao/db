@@ -1,0 +1,10 @@
+<view class = 'page-header'>
+	<text class = 'page-header-text'>{{history}}</text>
+</view>
+<view wx:for = '{{datatit}}'>
+	<view>{{datatit[index]}}</view>
+</view>
+<view wx:if = '{{isNoHistory}}' style="color:red">
+	{{noHistory}}
+</view>
+<button bindtap = 'clearStorage' >清空历史记录</button>
